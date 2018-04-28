@@ -19,11 +19,17 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
 
   header{
   #header_in {
+      margin-left: 4px;
+      margin-right: 4px;
      padding-top: 10px;
+     max-width: 2000px;
+     width: 100%;
   }
   #header_in .logo{
       display: block;
-      padding-left: 30px;
+  }
+  #header_in .logo img{
+      width: 16.6rem;
   }
 
 
@@ -31,7 +37,7 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
   #header_in .pc_header_li{
        float: right;
        padding-right: 30px;
-       padding-top: 15px;
+       padding-top: 50px;
        text-align: center;
        
   }
@@ -71,6 +77,11 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
            padding: 0;
   }
   }
+   @media (max-width: 551px){
+      #header_in .logo img{
+          width: 10.9rem;
+      }
+  }
   
    @media (max-width: 551px) {
    #header_in .pc_header_li{
@@ -89,7 +100,8 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
       #main_in{
           float: left;
           width: 75%;
-          margin-left: 4px;
+          margin-left: 5px;
+          max-width: 2000px;
       }
        @media (max-width: 551px){
         #main_in{
@@ -145,10 +157,11 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
         width: 33%;
          margin-bottom: 20px;
          background-color: #ffffff;
+         text-align: left;
     }
     @media (max-width: 551px){
         #main_in .new_aitms_navi{
-           width: 45%;
+           width: 46%;
            margin-left: 1.0rem;
         }
            }
@@ -159,11 +172,10 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
     }
     #main_in .new_aitms_navi .sanple_title{
         padding-top: 5px;
-        font-weight: bolder;
         
     }
      #main_in .new_aitms_navi  p{
-         padding-top: 50px;
+         padding-top: 20px;
          color: rgb(137, 128, 105);
      }
            #main_in .popurar_aitms{
@@ -207,7 +219,7 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
     }
     @media (max-width: 551px){
         #main_in .popurar_aitms_navi{
-           width: 45%;
+           width: 46%;
            margin-left: 1.0rem;
         }
            }
@@ -218,12 +230,13 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
     }
     #main_in .popurar_aitms_navi .sanple_title{
         padding-top: 5px;
-        font-weight: bolder;
+        text-align: left;
         
     }
      #main_in .popurar_aitms_navi  p{
-         padding-top: 50px;
+         padding-top: 20px;
          color: rgb(137, 128, 105);
+          text-align: left;
      }
       #main_in .guide{
                clear: both;
@@ -256,7 +269,7 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
   
     }
     #main_in .guide_main{
-        width: 45%;
+        width: 49.5%;
         float: left;
         height: 30rem;
         background-color: #ffffff;
@@ -271,14 +284,18 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
         color: #ffffff;
         }
     }
+    #main_in .guide_main .otodoke{
+        text-align: left;
+    }
     #main_in .guide_main .otodoke h1{
         font-size: 2.5rem;
         padding: 12px 0 0 12px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         color: #887f69;
+        font-weight: bold;
     }
     #main_in .guide_main .otodoke img{
-        padding: 0 0 0 12px;
+        padding: 2px 0 0 17px;
     }
      #main_in .guide_main .guide_main_navi ul{
          margin-bottom: 2.7rem;
@@ -292,10 +309,11 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
          color: #333333;
      }
     #main_in .guide_aside{
-        width: 45%;
+        width: 49.5%;
         height: 30rem;
         float: right;
         background-color: #ffffff;
+        text-align: left;
     }
     @media (max-width: 551px){
         #main_in .guide_aside{
@@ -308,17 +326,23 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
         margin-bottom: 2px;
         }
     }
+     #main_in .guide_aside .kessai{
+         text-align: left;
+     }
      #main_in .guide_aside .kessai h1{
         font-size: 2.5rem;
         padding: 12px 0 0 12px;
         margin-bottom: 10px;
         color: #887f69;
+        font-weight: bold;
     }
     #main_in .guide_aside .otodoke img{
         display: block;
         padding: 0 0 0 12px;
+        width: 100%;
     }
      #main_in .guide_aside .guide_main_navi ul{
+         display: block;
          margin-bottom: 2.7rem;
      }
      #main_in .guide_aside .guide_main_navi li{
@@ -341,6 +365,7 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
  #aside_in{
       float: right;
           width: 24%;
+          max-width: 2000px;
  }
      @media (max-width: 551px){
         #aside_in{
@@ -489,7 +514,7 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
       padding: 12px 0 12px 0;
   }
   #aside_in .pagelink #syncer-acdn-01 .active li{
-      
+
   } 
   #aside_in .pagelink #syncer-acdn-01 li a{
       color: #333333;
@@ -630,12 +655,19 @@ $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ
   }
 }
 footer{
+    #footer_in{
+        width: 100%;
+        max-width: 2000px;
+        clear: both; 
+    }
     #footer_in .main{
         width: 100%;
         clear: both;
           text-align: right;
     position: relative;
+    padding-top: 40px;
     margin-bottom: 20px;
+    max-width: 2000px;
     }
      @media (max-width: 551px){
          #footer_in .main{
@@ -654,7 +686,7 @@ footer{
     width: 100%;
     height: 1px;
     position: absolute;
-    top: 150%;
+    top: 130%;
     z-index: 1;
 }
     #footer_in .tyuui{
@@ -685,29 +717,55 @@ br { display : none ; }
         
 }//index終了
 main{
-    #main_in .list_navi{
-        background-color: #fff;
+     #main_in .list_navi{
         width: 100%;
+        margin-bottom: 10px;
+    }
+    @media (max-width: 551px){
+        #main_in .list_navi{
+            margin-bottom: 15px;
+            width: 98%;
+        }
     }
     #main_in .list_navi .home{
         margin: 0 0 0 0 ;
         background-color: #e8e4da;
+        padding-bottom: 3px;
     }
     #main_in .list_navi .home img{
         float: left;
         padding-left: 10px;
-        padding-top: 15px;
+        padding-top: 8.8px;
         background-position: left center;
+        width: 3rem;
+    }
+    @media (max-width: 551px){
+        #main_in .list_navi .home img{
+             padding-top: 26px;
+        }
     }
      #main_in .list_navi .home p{
          color: #887f69;
          padding-top: 10px;
+         margin-bottom: 12px;
+         text-align: left;
+     }
+     @media (max-width: 551px){
+        #main_in .list_navi .home p{
+         padding-top: 20px;
          margin-bottom: 20px;
+         font-size: 2.0rem;
+        }
      }
      #main_in .list_navi .home span{
          font-size: 1.2rem;
      }
-      #main_in .list_navi .list img{
+     @media (max-width: 551px){
+        #main_in .list_navi .home span{
+             font-size: 2.0rem;
+        }
+     }
+      #main_in  .list img{
           width: 100%;
       }
       #main_in .back {
@@ -741,23 +799,75 @@ main{
        }
 }//list 終了
 main {
-    #main_in .proname{
-        clear: both;
-          float: left;
+    text-align: left!important;
+
+      #main_in_pro  .list img{
           width: 100%;
-          height: 15rem;
-          background-color: #fff;
-          margin: auto;
-          border-bottom: 1px solid #887f69;
       }
-      #main_in .proname p{
-           text-align: left;
-           padding-top: 5rem;
-           color: #333333;
+    #main_in_pro{
+          float: left;
+          width: 75%;
+          margin-left: 5px;
+          max-width: 2000px;
+          background-color: #fff;
+      }
+      @media (max-width: 551px){
+         #main_in_pro{
+          width: 99%;
+          margin-right: 5px;
+      }
+      }
+     #main_in_pro .pro_color{
+         width: 100%;
+         background-color: #fff;
+     }
+    #main_in_pro .pro_size{
+        width: 77%;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    @media (max-width: 551px){
+         #main_in_pro .pro_size{
+        width: 95%;
+         }
+    }
+    #main_in_pro .proname{
+        clear: both;
+          background-color: #fff;
+          border-bottom: 1px solid #887f69;
+           width: 100%;
            font-size: 1.8rem;
            font-weight: bold;
-           letter-spacing: 10px;
+          text-align: left;
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 34px;
+    max-width: 2000px;
+      }
+      #main_in_pro .proname p:before{
+           content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 130%;
+    z-index: 1;
        }
+       #main_in_pro .proname p{
+           margin-bottom: 0px;
+       }
+       #main_in_pro .proname .codo p{
+          clear: both;
+      text-align: right;
+      font-size: 1.2rem;
+       margin-bottom: 25px;
+       color: #d5d5d5;
+       }
+       @media (max-width: 551px){
+           #main_in_pro .proname .codo p{
+               text-align: left;
+       }
+}
        #display_img{
            width: 80%
        }
@@ -776,7 +886,7 @@ main {
            }
 }
 .syousai li {
-    width: 13%;
+    width: 12.5%;
   list-style: none;
   float: left;
   margin: 2px;
@@ -784,7 +894,8 @@ main {
 }
 @media (max-width: 551px){
     .syousai li{
-        width: 19%;
+        width: 18.5%;
+        margin: 1.5px;
         display: inline-block;
     }
 }
@@ -792,47 +903,46 @@ main {
   width: 90%;
   cursor: pointer;
 }
-#main_in .color_size{
+#main_in_pro .color_size{
         clear: both;
           float: left;
           width: 100%;
-          height: 15rem;
+          height: 19rem;
           background-color: #fff;
           margin: auto;
           margin-top: 30px;
-          border-top: 1px solid #887f69;
-          border-bottom: 1px solid #887f69;
+          border-top: 1px solid #887f69
       }
-      #main_in .color_size img{
-           text-align: left;
-           padding-top: 1rem;
+      #main_in_pro .color_size img{
+           padding-top: 2rem;
+           padding-bottom: 1.8rem;
            color: #333333;
-           font-size: 1.8rem;
+           width: 14rem;
            font-weight: bold;
            letter-spacing: 10px;
           
       }
-      #main_in .color_size table{
+      #main_in_pro .color_size table{
           width: 100%;
           text-align: center;
           border: 1px solid #887f69;
       }
-      #main_in .color_size th{
+      #main_in_pro .color_size th{
           border: 1px solid #887f69;
           text-align: center;
           background-color: #f9f9f5;
           color: #887f69;
       }
-      #main_in .color_size td{
+      #main_in_pro .color_size td{
           border: 1px solid #887f69;
           text-align: center;
           color: #887f69;
           
       }
-      #main_in .color_size td:first-child{
+      #main_in_pro .color_size td:first-child{
            background-color: #f9f9f5;
       }
-      #main_in .price_size{
+      #main_in_pro .price_size{
         clear: both;
           float: left;
           width: 50%;
@@ -843,66 +953,94 @@ main {
           border-top: 1px solid #887f69;
           border-bottom: 1px solid #887f69;
       }
+      @media (max-width: 780px){
+          #main_in_pro .price_size{
+              width: 60%;
+          }
+      } 
       @media (max-width: 551px){
-          #main_in .price_size{
+          #main_in_pro .price_size{
+              text-align: center;
                width: 100%;
                background-color: #f9f9f5;
           }
       }
       
-       #main_in .price_size img{
+       #main_in_pro .price_size img{
            float: left;
            display: block;
            text-align: left;
            padding-top: 3rem;
            color: #333333;
-           font-size: 1.8rem;
+           width: 6rem;
            font-weight: bold;
            letter-spacing: 10px;
     }
-     #main_in .price_size p{
+     #main_in_pro .price_size p{
          float: left;
            display: block;
           padding-top: 2.0rem;
-          padding-left: 2.0rem;
+          padding-left: 6%;
           color: #333333;
           font-size: 1.8rem;
           font-style: oblique;
      }
-     @media (max-width: 551px){
-          #main_in .price_size p{
-               padding-left: 30%;
-               font-size: 1.8rem;
+     @media (max-width: 780px){
+          #main_in_pro .price_size p{
+          padding-left: 0;
+          padding-top: 2.5rem;
+          font-size: 1.5rem;
           }
      }
-     #main_in .price_size p span{
+     @media (max-width: 551px){
+          #main_in_pro .price_size p{
+              padding-top: 2.0rem;
+               font-size: 1.8rem;
+               float: none;
+          }
+     }
+     #main_in_pro .price_size p span{
           font-size: 2.0rem;
-          color: red;
+          color: #e92e72;
           font-style: oblique;
           font-family: "ＭＳ 明朝",serif; 
           letter-spacing: -5px;
           margin-right: 4px;
      }
+      @media (max-width: 780px){
+          #main_in_pro .price_size p span{
+               font-size: 1.8rem;
+          }
+      }
+          
      @media (max-width: 551px){
-          #main_in .price_size p span{
+          #main_in_pro .price_size p span{
               font-size: 2.1rem;
           }
      }
-     #main_in .cart{
-         float: left;
-     width: 30%;
-	margin: 0 0 0 0 ;
-	padding: 12px 18px 0px 18px;
-	background-color: #887f69;
-	 margin-top: 3rem;
-	 margin-left: 3rem;
+     #main_in_pro .cart{
+         float: right;
+	margin: 30px 0 0 0 ;
+	 width: 40%;
 }
+  #main_in_pro .cart img{
+      width: 400px;
+      height: 75px;
+  }
+  @media (max-width: 780px){
+      #main_in_pro .cart img{
+          width: 150px;
+          height: 50px;
+      }
+  }
+      clear: both;
+      text-align: right;
 @media (max-width: 551px){
-    #main_in .cart{
+    #main_in_pro .cart{
         display: none;
     }
 }
- #main_in .quantity{
+ #main_in_pro .quantity{
         clear: both;
           float: left;
           width: 50%;
@@ -910,36 +1048,51 @@ main {
           background-color: #fff;
           margin: auto;
       }
+      @media (max-width: 780px){
+         #main_in_pro .quantity{
+             width: 60%;
+         }
+      }
       @media (max-width: 551px){
-          #main_in .quantity{
+          #main_in_pro .quantity{
               width: 100%;
               background-color: #f9f9f5;
           }
       }
-       #main_in .quantity img{
+       #main_in_pro .quantity img{
            float: left;
            display: block;
            text-align: left;
-           padding-top: 3rem;
+           padding-top: 2rem;
            color: #333333;
-           font-size: 1.8rem;
+           width: 10rem;
            font-weight: bold;
            letter-spacing: 10px;
     }
-    #main_in .quantity p{
+    #main_in_pro .quantity p{
           float: left;
            text-align: center;
            display: block;
             padding-top: 3.0rem;
-          padding-left: 13.0rem;
+          padding-left: 45%;
           margin-top: 2.0rem;
           margin-left: 1.0rem;
           color: #887f69;;
           font-size: 1.8rem;
            border: 1px solid #887f69;
      }
+     @media (max-width: 780px){
+         #main_in_pro .quantity p{
+             padding-left: 7.0rem;
+         }
+     } 
+      @media (max-width: 551px){
+         #main_in_pro .quantity p{
+             padding-left: 60%;
+         }
+      }
      @media (max-width: 551px){
-    #main_in .sp_cart{
+    #main_in_pro .sp_cart{
         clear: both;
      max-width: 250px;
 	margin: 0 auto ;
@@ -947,28 +1100,27 @@ main {
     }
 }
 @media (min-width: 550px){
-    #main_in .sp_cart{
+    #main_in_pro .sp_cart{
         display: none;
     }
 }
-     #main_in .setumei{
+     #main_in_pro .setumei{
           clear: both;
           float: left;
          width: 100%;
          background-color: #fff;
      }
-     #main_in .setumei .setumei_navi{
+     #main_in_pro .setumei .setumei_navi{
          clear: both;
           float: left;
           width: 100%;
           height: 7rem;
           background-color: #fff;
           margin: auto;
-          border-top: 1px solid #887f69;
           border-bottom: 1px solid #333333;
          
      }
-     #main_in .setumei p{
+     #main_in_pro .setumei p{
          float: left;
            display: block;
           padding-top: 2.5rem;
@@ -976,49 +1128,52 @@ main {
           color: #887f69;
           font-size: 1.8rem;
           font-weight: bold;
+          text-align: left;
          
      }
-     #main_in .setumei .kaisetu h2{
+     #main_in_pro .setumei .kaisetu h2{
          float: left;
            display: block;
           padding-top: 2.5rem;
-          padding-left: 2.0rem;
          font-size: 2.0rem;
          color: #887f69;
          font-weight: bold;
      }
-     #main_in .setumei .kaisetu p{
+     #main_in_pro .setumei .kaisetu p{
          float: left;
            display: block;
           font-size: 1.6rem;
+          padding-left: 0px;
          color: #333;
          padding-top: 0;
+         margin-bottom: 0px;
      }
      @media (max-width: 551px){
           #main_in .setumei .kaisetu p{
               margin-bottom: 0px;
      }
      }
-     #main_in .setumei .color_size{
+     #main_in_pro .setumei .color_size{
          clear: both;
          display: block;
          border-top: none;
          width: 80%;
           text-align: center;
            border-bottom: none;
-           padding-left: 2.0rem;
+           margin-top: 0px;
      }
      @media (max-width: 551px){
-          #main_in .setumei .color_size{
+          #main_in_pro .setumei .color_size{
               margin-top: 0px;
               margin-bottom: 20px;
           }
      }
-      #main_in .setumei .color_size th:last-child{
+      #main_in_pro .setumei .color_size th:last-child{
           background-color: #fff;
           font-weight: normal;
       }
-      #main_in .setumei .color_size td:first-child{
+      
+      #main_in_pro .setumei .color_size td:first-child{
            font-weight: bold;
       }
       
